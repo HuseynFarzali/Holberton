@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Martian Mono", monospace;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  border-right-color: orange;
+  border-right-style: solid;
+  border-right-width: 4px;
+  flex: 2;
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+header .nav--header {
+  text-align: center;
+  font-size: 40px;
+}
+header .nav--main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+header .nav--main a {
+  text-decoration: none;
+  transition: 100ms color linear;
+  color: #6F6D91;
+  font-size: 20px;
+}
+header .nav--main a:hover {
+  text-decoration: underline;
+  color: #3437de;
+}
+header .nav--footer .logo-section {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+}
+header .nav--footer .logo-section .logo {
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #F3F3F6;
+  box-shadow: 0 0 1 #e3e3e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .nav--footer .logo-section .logo > svg {
+  scale: 1.5;
+}
+header .nav--footer .copyright-section {
+  margin: 0 20px;
+  text-align: center;
+  margin-top: 40px;
+  color: gray;
+  font-weight: 300;
+  font-size: 13px;
+}
+header .nav--footer .copyright-section a {
+  text-decoration: none;
+  color: gray;
+}
+header .nav--footer .copyright-section .anchor-holberton {
+  margin-top: 20px;
+  text-decoration: underline;
+  text-align: justify;
+}
+
+main {
+  flex: 8;
+  height: 100%;
+  padding: 40px;
+}
+
+footer {
+  height: 300px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+footer .footer-section {
+  width: 20%;
+  height: 80%;
+  padding: 10px 20px;
+}
+footer .footer-section h1 {
+  margin-bottom: 20px;
+  text-decoration: underline;
+  font-size: 24px;
+}
+footer .footer-section p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+aside#disqus-container {
+  display: block;
+  flex: 2;
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+}
